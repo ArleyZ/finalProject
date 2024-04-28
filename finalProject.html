@@ -5,30 +5,102 @@
 
 <head>
 <title>Web-115 Final Project</title>
+<style>
+    div.mealDiv{width:1000px; margin:auto;}
+    label{text-align: right;font-size: large;float:left; width:150px;font-weight: bold}
+
+    .lowStuff{position:relative; left:32%;}
+    .lowerStuff{position:relative; left:45%;}
+
+</style>
 </head>
 
-<body>
-    <h1>Meal Planner Placeholder Text</h1>
+<body style="background-color:#deb887">
+
+
+    <div style="background-color: #e69c3b;">
+        <img src="finalProjectBanner.png" alt="logo" style="display: block;margin: auto;">
+    </div>
+    <br>
+
     <form id="mealPlan">
-        <div id="mondayMeals">
-            <P>Monday Meals
-            <input class="breakfastInput" placeholder="Input for Breakfast meal"> 
-            <input class="snackInput" placeholder="Input for first Snack"> 
-            <input class="lunchInput" placeholder="Input for Lunch meal"> 
-            <input class="snack2Input" placeholder="Input for second Snack"> 
-            <input class="dinnerInput" placeholder="Input for Dinner meal"> 
-            </P>
-        </div>
+        <div class="mealDiv">
+            <label for="mondayInput">Monday Meals:</label>
+            <input id="mondayInput" class="breakfastInput mondayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput mondayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput mondayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input mondayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput mondayInput" placeholder="Input for Dinner meal"> 
+
+        </div><br>
+
+        <div id="tuesdayInput" class="mealDiv">
+            <label for="tuesdayInput">Tuesday Meals:</label>  
+            <input class="breakfastInput tuesdayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput tuesdayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput tuesdayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input tuesdayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput tuesdayInput" placeholder="Input for Dinner meal"> 
+
+        </div><br>
+
+        <div id="wednesdayInput" class="mealDiv">
+            <label for="tuesdayInput">Wednesday Meals:</label>  
+            <input class="breakfastInput wednesdayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput wednesdayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput wednesdayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input wednesdayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput wednesdayInput" placeholder="Input for Dinner meal"> 
+        </div><br>
+        
+        <div id="thursdayInput" class="mealDiv">
+            <label for="thursdayInput">Thursday Meals:</label>  
+            <input class="breakfastInput thursdayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput thursdayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput thursdayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input thursdayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput thursdayInput" placeholder="Input for Dinner meal"> 
+
+        </div><br>
+
+        <div id="fridayInput" class="mealDiv">
+            <label for="fridayInput">Friday Meals:</label>  
+            <input class="breakfastInput fridayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput fridayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput fridayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input fridayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput fridayInput" placeholder="Input for Dinner meal"> 
+
+        </div><br>
+
+        <div id="saturdayInput" class="mealDiv">
+            <label for="saturdayInput">Saturday Meals:</label>  
+            <input class="breakfastInput saturdayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput saturdayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput saturdayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input saturdayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput saturdayInput" placeholder="Input for Dinner meal"> 
+
+        </div><br>
+
+        <div id="sundayInput" class="mealDiv">
+            <label for="sundayInput">Sunday Meals:</label>  
+            <input class="breakfastInput sundayInput" placeholder="Input for Breakfast meal"> 
+            <input class="snackInput sundayInput" placeholder="Input for first Snack"> 
+            <input class="lunchInput sundayInput" placeholder="Input for Lunch meal"> 
+            <input class="snack2Input sundayInput" placeholder="Input for second Snack"> 
+            <input class="dinnerInput sundayInput" placeholder="Input for Dinner meal"> 
+
+        </div><br>
 
 
 
-        <div>
-            <button type="reset" id="clearButton">Clear Meals</button>
-            <input id="emailInput" placeholder="Enter email here">
-            <button type="submit" id="submitButton">Make Meal Plan</button>
+        <div class="mealDiv">
+            <button class="lowStuff" type="reset" id="clearButton">Clear Meals</button>
+            <input class="lowStuff" id="emailInput" placeholder="Enter email here" style="width:200px; margin:auto;">
+            <button class="lowStuff" type="submit" id="submitButton">Make Meal Plan</button>
             <br>
-            <button type="button" id="downloadButton">Download Meal Plan</button>
-            <button type="button" id="printButton">Print Meal Plan</button>
+            <button class="lowerStuff" type="submit" id="printButton">Print Meal Plan</button>
         
         </div>
 
